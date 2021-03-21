@@ -88,7 +88,7 @@ public class F2A2 extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(activityFragmentCommunication != null) {
+                if (activityFragmentCommunication != null) {
                     activityFragmentCommunication.replaceWithF3A2();
                 }
             }
@@ -97,7 +97,7 @@ public class F2A2 extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(activityFragmentCommunication != null) {
+                if (activityFragmentCommunication != null) {
                     activityFragmentCommunication.goBackToF1A2();
                 }
             }
@@ -106,7 +106,7 @@ public class F2A2 extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(activityFragmentCommunication != null) {
+                if (activityFragmentCommunication != null) {
                     activityFragmentCommunication.killActivity2();
                 }
             }
@@ -116,7 +116,7 @@ public class F2A2 extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if(context instanceof ActivityFragmentCommunication) {
+        if (context instanceof ActivityFragmentCommunication) {
             activityFragmentCommunication = (ActivityFragmentCommunication) context;
         }
     }

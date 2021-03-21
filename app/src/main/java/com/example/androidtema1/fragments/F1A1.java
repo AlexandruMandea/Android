@@ -80,7 +80,7 @@ public class F1A1 extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(activityFragmentCommunication != null) {
+                if (activityFragmentCommunication != null) {
                     activityFragmentCommunication.openActivity2();
                 }
             }
@@ -90,7 +90,7 @@ public class F1A1 extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if(context instanceof ActivityFragmentCommunication) {
+        if (context instanceof ActivityFragmentCommunication) {
             activityFragmentCommunication = (ActivityFragmentCommunication) context;
         }
     }
